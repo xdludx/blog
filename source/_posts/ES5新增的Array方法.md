@@ -2,6 +2,8 @@
 title: ES5新增的Array方法
 date: 2017-05-12 13:51:23
 tags:
+  - javascript
+  - Array
 ---
 
 ### forEach()
