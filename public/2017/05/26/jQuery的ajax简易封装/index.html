@@ -74,7 +74,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="javascript," />
 
 
 
@@ -90,12 +90,17 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="xdludx">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta name="description" content="在项目中，经常会遇到需要点击一个按钮，向服务器请求资源的需求。这种情况如果我们不对ajax请求作任何处理，多次点击会有很多请求在等待，影响性能和体验。">
+<meta name="keywords" content="javascript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="jQuery的ajax简易封装">
+<meta property="og:url" content="http://yoursite.com/2017/05/26/jQuery的ajax简易封装/index.html">
 <meta property="og:site_name" content="xdludx">
+<meta property="og:description" content="在项目中，经常会遇到需要点击一个按钮，向服务器请求资源的需求。这种情况如果我们不对ajax请求作任何处理，多次点击会有很多请求在等待，影响性能和体验。">
+<meta property="og:updated_time" content="2017-05-26T09:38:35.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="xdludx">
+<meta name="twitter:title" content="jQuery的ajax简易封装">
+<meta name="twitter:description" content="在项目中，经常会遇到需要点击一个按钮，向服务器请求资源的需求。这种情况如果我们不对ajax请求作任何处理，多次点击会有很多请求在等待，影响性能和体验。">
 
 
 
@@ -123,13 +128,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/05/26/jQuery的ajax简易封装/"/>
 
 
 
 
 
-  <title>归档 | xdludx</title>
+  <title>jQuery的ajax简易封装 | xdludx</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -154,7 +159,7 @@
     
   
 
-  <div class="container sidebar-position-left  page-archive  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -248,214 +253,166 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
-
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      嗯..! 目前共计 5 篇日志。 继续努力。
-    </span>
-
+  <div id="posts" class="posts-expand">
     
-
-      
-      
-      
-
-      
-        
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
-        </div>
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/06/19/avalon源码学习之部分函数/" itemprop="url">
-              
-                <span itemprop="name">avalon源码学习之部分函数</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-06-19T15:11:41+08:00"
-              content="2017-06-19" >
-          06-19
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/05/26/jQuery的ajax简易封装/" itemprop="url">
-              
-                <span itemprop="name">jQuery的ajax简易封装</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-05-26T17:34:05+08:00"
-              content="2017-05-26" >
-          05-26
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/05/23/初步了解节流和去抖/" itemprop="url">
-              
-                <span itemprop="name">初步了解节流和去抖</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-05-23T17:39:39+08:00"
-              content="2017-05-23" >
-          05-23
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/05/13/算法学习之冒泡排序/" itemprop="url">
-              
-                <span itemprop="name">算法学习之冒泡排序</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-05-13T16:25:49+08:00"
-              content="2017-05-13" >
-          05-13
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/05/12/ES5新增的Array方法/" itemprop="url">
-              
-                <span itemprop="name">ES5新增的Array方法</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-05-12T13:51:23+08:00"
-              content="2017-05-12" >
-          05-12
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-  </section>
 
   
 
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/26/jQuery的ajax简易封装/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="xdludx">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/common/avatar.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="xdludx">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">jQuery的ajax简易封装</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-26T17:34:05+08:00">
+                2017-05-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2017/05/26/jQuery的ajax简易封装/" class="leancloud_visitors" data-flag-title="jQuery的ajax简易封装">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>在项目中，经常会遇到需要点击一个按钮，向服务器请求资源的需求。这种情况如果我们不对ajax请求作任何处理，多次点击会有很多请求在等待，影响性能和体验。</p>
+<a id="more"></a>
+<p>工作中，发现之前的项目代码是这样做的，感觉挺不错的，特拿出来分享一下。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div></pre></td><td class="code"><pre><div class="line">(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> ajax = &#123;</div><div class="line">        <span class="attr">loading</span>: &#123;&#125;, <span class="comment">//确保每次的ajax请求必需在前一次ajax请求完成时执行</span></div><div class="line">        <span class="comment">//ajax获取数据</span></div><div class="line">        ajax: <span class="function"><span class="keyword">function</span> (<span class="params">_config</span>) </span>&#123;</div><div class="line">            _config = _config || &#123;&#125;;</div><div class="line">            <span class="comment">//如果配置的url为"mock"，则success方法的参数是mock。</span></div><div class="line">            <span class="keyword">if</span> (_config.url === <span class="string">"mock"</span> ) &#123;</div><div class="line">                _config.success ( _config.mock );</div><div class="line">                <span class="keyword">return</span>;</div><div class="line">            &#125;</div><div class="line">            <span class="comment">//如果ajax请求没有回来，则新建一个Deffered对象并返回，因为jquery的ajax方法也是返回一个Deferred。</span></div><div class="line">            <span class="keyword">if</span> ( ajax.loading[_config.url] )&#123;</div><div class="line">                <span class="keyword">return</span> $.Deferred();</div><div class="line">            &#125;</div><div class="line">            ajax.loading[_config.url] = <span class="literal">true</span>;</div><div class="line"></div><div class="line">            <span class="keyword">var</span> config = &#123;</div><div class="line">                <span class="attr">type</span>: <span class="string">'post'</span>,</div><div class="line">                <span class="attr">dataType</span>: <span class="string">'json'</span>,</div><div class="line">                <span class="attr">contentType</span>: <span class="string">'application/json;charset=UTF-8'</span>,</div><div class="line">                <span class="attr">cache</span>: <span class="literal">false</span>,</div><div class="line">                <span class="attr">complete</span>: <span class="function"><span class="keyword">function</span> (<span class="params">r</span>) </span>&#123;</div><div class="line">                    <span class="comment">//ajax请求成功以后删除_config.url属性</span></div><div class="line">                    <span class="keyword">delete</span> ajax.loading[_config.url];</div><div class="line">                &#125;</div><div class="line">            &#125;;</div><div class="line">            $.extend( config, _config ); <span class="comment">//覆盖掉默认属性</span></div><div class="line">            <span class="keyword">return</span> $.ajax(config);</div><div class="line">        &#125;</div><div class="line">    &#125;;</div><div class="line">    <span class="comment">//将ajax方法放到util上</span></div><div class="line">    (<span class="keyword">this</span>.util = <span class="keyword">this</span>.util || &#123;&#125;).ajax = ajax.ajax;</div><div class="line"></div><div class="line">&#125;).call(<span class="keyword">this</span>);</div></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/javascript/" rel="tag"># javascript</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/05/23/初步了解节流和去抖/" rel="next" title="初步了解节流和去抖">
+                <i class="fa fa-chevron-left"></i> 初步了解节流和去抖
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/06/19/avalon源码学习之部分函数/" rel="prev" title="avalon源码学习之部分函数">
+                avalon源码学习之部分函数 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -463,6 +420,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -649,11 +610,9 @@
   
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
 
 
   
