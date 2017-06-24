@@ -90,17 +90,17 @@
 
 
 
-<meta name="description" content="JSHint 简介当我们做项目，发布代码时，大多会对需要上线的代码进行质量检查，我们公司用的是Jenkins+Sonar，如果Sonar检查不通过，代码则不能上线。基于这些考虑，我们有必要在编码阶段就保证自己的代码质量，JSHint就是这样一个工具。 相关配置Enforcing options当下面这些属性设置为true的时候，JSHint会对你的代码提供更多的警告。属性前边标记“！”的是已经废弃">
+<meta name="description" content="JSHint 简介当我们做项目，发布代码时，大多会对需要上线的代码进行质量检查，我们公司用的是Jenkins+Sonar，如果Sonar检查不通过，代码则不能上线。基于这些考虑，我们有必要在编码阶段就保证自己的代码质量，JSHint就是这样一个工具。">
 <meta name="keywords" content="JSHint">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JSHint配置">
 <meta property="og:url" content="http://yoursite.com/2017/06/24/JSHint配置/index.html">
 <meta property="og:site_name" content="xdludx">
-<meta property="og:description" content="JSHint 简介当我们做项目，发布代码时，大多会对需要上线的代码进行质量检查，我们公司用的是Jenkins+Sonar，如果Sonar检查不通过，代码则不能上线。基于这些考虑，我们有必要在编码阶段就保证自己的代码质量，JSHint就是这样一个工具。 相关配置Enforcing options当下面这些属性设置为true的时候，JSHint会对你的代码提供更多的警告。属性前边标记“！”的是已经废弃">
-<meta property="og:updated_time" content="2017-06-24T15:51:36.000Z">
+<meta property="og:description" content="JSHint 简介当我们做项目，发布代码时，大多会对需要上线的代码进行质量检查，我们公司用的是Jenkins+Sonar，如果Sonar检查不通过，代码则不能上线。基于这些考虑，我们有必要在编码阶段就保证自己的代码质量，JSHint就是这样一个工具。">
+<meta property="og:updated_time" content="2017-06-24T15:53:55.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JSHint配置">
-<meta name="twitter:description" content="JSHint 简介当我们做项目，发布代码时，大多会对需要上线的代码进行质量检查，我们公司用的是Jenkins+Sonar，如果Sonar检查不通过，代码则不能上线。基于这些考虑，我们有必要在编码阶段就保证自己的代码质量，JSHint就是这样一个工具。 相关配置Enforcing options当下面这些属性设置为true的时候，JSHint会对你的代码提供更多的警告。属性前边标记“！”的是已经废弃">
+<meta name="twitter:description" content="JSHint 简介当我们做项目，发布代码时，大多会对需要上线的代码进行质量检查，我们公司用的是Jenkins+Sonar，如果Sonar检查不通过，代码则不能上线。基于这些考虑，我们有必要在编码阶段就保证自己的代码质量，JSHint就是这样一个工具。">
 
 
 
@@ -339,6 +339,7 @@
 
       
         <h3 id="JSHint-简介"><a href="#JSHint-简介" class="headerlink" title="JSHint 简介"></a>JSHint 简介</h3><p>当我们做项目，发布代码时，大多会对需要上线的代码进行质量检查，我们公司用的是Jenkins+Sonar，如果Sonar检查不通过，代码则不能上线。基于这些考虑，我们有必要在编码阶段就保证自己的代码质量，JSHint就是这样一个工具。</p>
+<a id="more"></a>
 <h3 id="相关配置"><a href="#相关配置" class="headerlink" title="相关配置"></a>相关配置</h3><h4 id="Enforcing-options"><a href="#Enforcing-options" class="headerlink" title="Enforcing options"></a>Enforcing options</h4><p>当下面这些属性设置为<code>true</code>的时候，JSHint会对你的代码提供更多的警告。属性前边标记“！”的是已经废弃的属性，在JSHint的下个大版本就会移除，所以不建议使用。</p>
 <h5 id="bitwise"><a href="#bitwise" class="headerlink" title="bitwise"></a>bitwise</h5><p>这个选项是禁止使用位运算符，比如^(XOR)，|(OR)或者其他运算符。位运算在JS中是极少用到的，我们很容易把<code>&amp;</code>输成<code>&amp;&amp;</code>。</p>
 <h5 id="camelcase"><a href="#camelcase" class="headerlink" title="! camelcase"></a>! camelcase</h5><p>这个选项是强制所有的变量必须用驼峰法或者下划线连接的全大写命名。如：<code>camelCase</code>或<code>UPPER_CASE</code>。</p>
