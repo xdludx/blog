@@ -1227,6 +1227,9 @@ pre .javascript .function {
   position: relative;
   margin: 60px 0;
 }
+.posts-collapse .collection-title h1 {
+  margin: 20px 20px 10px;
+}
 .posts-collapse .collection-title h2 {
   margin-left: 20px;
 }
@@ -1695,7 +1698,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #deffd6;
+  background: #5c8fff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2476,7 +2479,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 20px 20px 10px;
+  margin: 20px 0 10px;
 }
 p {
   margin: 0 0 25px 0;
