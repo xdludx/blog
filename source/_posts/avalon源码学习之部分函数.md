@@ -1,7 +1,9 @@
 ---
 title: avalon源码学习之部分函数
 date: 2017-06-19 15:11:41
-tags: javascript avalon
+tags: 
+  - javascript
+  - avalon
 ---
 
 首先说一下，这里avalon的源码是指avalon 1.3.6版本，之所以看这个版本的源码仅仅是因为日常维护的系统中使用的就是这个版本，其实相较于其他的MVVM框架angular.js、vue.js，这个版本的avalon应该说已经很过时了。但是源码中有很多需要学习的点，对于我们还是很有借鉴意义的。
