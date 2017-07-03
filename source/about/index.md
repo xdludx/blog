@@ -1,9 +1,7 @@
 ---
-title: about
+title: xdludx
 date: 2017-05-13 18:00:13
 ---
-
-## xdludx
 
 ### 职业
 
