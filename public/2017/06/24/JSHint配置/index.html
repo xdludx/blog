@@ -97,6 +97,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/06/24/JSHint配置/index.html">
 <meta property="og:site_name" content="xdludx">
 <meta property="og:description" content="JSHint 简介当我们做项目，发布代码时，大多会对需要上线的代码进行质量检查，我们公司用的是Jenkins+Sonar，如果Sonar检查不通过，代码则不能上线。基于这些考虑，我们有必要在编码阶段就保证自己的代码质量，JSHint就是这样一个工具。">
+<meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2017-06-24T15:53:55.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JSHint配置">
@@ -354,11 +355,11 @@
 <li>5 同<code>&quot;es5&quot;: true</code></li>
 <li>6 告诉JSHint，代码是基于ECMAScript 6的语法规范。注意不是所有的浏览器都支持这些语法。</li>
 </ul>
-<h5 id="forin"><a href="#forin" class="headerlink" title="forin"></a>forin</h5><p>这个选项要求所有的<code>for in</code>循环都需过滤对象的属性。<code>for in</code>语句允许遍历一个对象所有的属性名称，包括继承自原型链上的属性。这种做法经常会导致你的对象上会包含一些以外的属性，所以安全起见，需要将原型链上的属性过滤掉，例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">for (key in obj) &#123;</div><div class="line">    if (obj.hasOwnProperty(key)) &#123;</div><div class="line">        // We are sure that obj[key] belongs to the object and was not inherited.</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h5 id="forin"><a href="#forin" class="headerlink" title="forin"></a>forin</h5><p>这个选项要求所有的<code>for in</code>循环都需过滤对象的属性。<code>for in</code>语句允许遍历一个对象所有的属性名称，包括继承自原型链上的属性。这种做法经常会导致你的对象上会包含一些以外的属性，所以安全起见，需要将原型链上的属性过滤掉，例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">for (key in obj) &#123;</span><br><span class="line">    if (obj.hasOwnProperty(key)) &#123;</span><br><span class="line">        // We are sure that obj[key] belongs to the object and was not inherited.</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <h5 id="freeze"><a href="#freeze" class="headerlink" title="freeze"></a>freeze</h5><p>这个选项禁止重写原生对象的原型，比如：<code>Array</code>，<code>Date</code>等等。</p>
 <h5 id="futurehostile"><a href="#futurehostile" class="headerlink" title="futurehostile"></a>futurehostile</h5><p>这个选项允许警告代码中用到的JS在今后版本中的标识符，虽然在当前版本下，写这些标识符不会有什么问题，但是如果之后代码库要迁移到新的语言版本的时候，这种做法很可能会引发问题。</p>
 <h5 id="globals"><a href="#globals" class="headerlink" title="globals"></a>globals</h5><p>这个选项用于指定一个在源码中没有正式定义的全局变量的白名单，当我们定义<code>&quot;undef&quot;: true</code>的时候，这个选项就起作用了。用法如下:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&quot;globals&quot;: &#123;</div><div class="line">    &quot;_&quot;: true,</div><div class="line">    &quot;util&quot;: true</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&quot;globals&quot;: &#123;</span><br><span class="line">    &quot;_&quot;: true,</span><br><span class="line">    &quot;util&quot;: true</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h5 id="immed"><a href="#immed" class="headerlink" title="! immed"></a>! immed</h5><p>这个选项要求函数的直接调用必须用小括号括起来。这样可以让其他人看你的代码时，更容易理解。</p>
 <h5 id="indent"><a href="#indent" class="headerlink" title="! indent"></a>! indent</h5><p>这个选项用于指定你的代码缩进宽度。</p>
 <h5 id="latedef"><a href="#latedef" class="headerlink" title="latedef"></a>latedef</h5><p>这个选项是指变量在定义之前不能被使用。JS只具有函数作用域，除此之外，所有的变量都会被提升到函数的顶部。这种行为会导致一些令人讨厌的bugs，这也是只有在显式定义变量之后再使用它会更安全的原因。当设置属性<code>nofunc</code>的时候，将会允许忽略函数声明。</p>
@@ -381,7 +382,7 @@
 <li>[“inner”|false] 仅仅检查同一作用域的变量声明</li>
 <li>[“outer”|true] 同时检查外部作用域的变量声明</li>
 </ul>
-<h5 id="singleGroups"><a href="#singleGroups" class="headerlink" title="singleGroups"></a>singleGroups</h5><p>如果不是必须使用分组操作符，这个选项会禁止使用。因为这是对一元运算符的误解。比如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">delete(boj.attr);</div><div class="line">var a = 2 + (3 * 4);</div></pre></td></tr></table></figure></p>
+<h5 id="singleGroups"><a href="#singleGroups" class="headerlink" title="singleGroups"></a>singleGroups</h5><p>如果不是必须使用分组操作符，这个选项会禁止使用。因为这是对一元运算符的误解。比如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">delete(boj.attr);</span><br><span class="line">var a = 2 + (3 * 4);</span><br></pre></td></tr></table></figure></p>
 <h5 id="strict"><a href="#strict" class="headerlink" title="strict"></a>strict</h5><p>这个选项要求代码运行在ECMAScript 5的严格模式下。可以接收四个值：</p>
 <ul>
 <li>“global” 全局级使用严格模式</li>
@@ -408,7 +409,7 @@
 <h5 id="lastsemic"><a href="#lastsemic" class="headerlink" title="lastsemic"></a>lastsemic</h5><p>这个选项阻止了缺少分号的警告。但是仅仅是一行语句块中的最后一条语句省略掉的分号。比如：<code>var name = (function() { return &#39;Anton&#39; }());</code>。</p>
 <h5 id="laxbreak"><a href="#laxbreak" class="headerlink" title="! laxbreak"></a>! laxbreak</h5><p>这个选项阻止了不安全折行的警告。</p>
 <h5 id="laxcomma"><a href="#laxcomma" class="headerlink" title="laxcomma"></a>laxcomma</h5><p>这个选项阻止了逗号开始的警告。比如：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var obj = &#123;</div><div class="line">    name: &apos;Anton&apos;</div><div class="line">    , handle: &apos;valueof&apos;</div><div class="line">    , role: &apos;SW Engineer&apos;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var obj = &#123;</span><br><span class="line">    name: &apos;Anton&apos;</span><br><span class="line">    , handle: &apos;valueof&apos;</span><br><span class="line">    , role: &apos;SW Engineer&apos;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <h5 id="loopfunc"><a href="#loopfunc" class="headerlink" title="loopfunc"></a>loopfunc</h5><p>这个选项是阻止对循环内部的函数做出警告。</p>
 <h5 id="moz"><a href="#moz" class="headerlink" title="moz"></a>moz</h5><p>这个选项是告诉JSHint，你的代码使用的是Mozilla的JS扩展，除非你是专门为火狐浏览器web开发，否则你不需要设置这个选项。</p>
 <h5 id="multistr"><a href="#multistr" class="headerlink" title="! multistr"></a>! multistr</h5><p>这个选项是阻止对多行字符串发出的警告。</p>
@@ -416,7 +417,7 @@
 <h5 id="noyield"><a href="#noyield" class="headerlink" title="noyield"></a>noyield</h5><p>用了这个选项，在generator函数里边，没有<code>yield</code>语句，将不再警告。</p>
 <h5 id="plusplus"><a href="#plusplus" class="headerlink" title="plusplus"></a>plusplus</h5><p>这个选项禁止使用一元运算符<code>++</code>和<code>--</code>。有的人认为<code>++</code>和<code>--</code>降低了他们代码风格的质量，而且有的编程语言，比如Python，完全没有这种操作符。</p>
 <h5 id="proto"><a href="#proto" class="headerlink" title="proto"></a>proto</h5><p>这个选项禁止有关<strong>proto</strong>属性相关的属性。</p>
-<h5 id="scripturl"><a href="#scripturl" class="headerlink" title="scripturl"></a>scripturl</h5><p>禁止使用scripts的url发出的警告，如 <a href="javascript:void 0" target="_blank" rel="external"></a></p>
+<h5 id="scripturl"><a href="#scripturl" class="headerlink" title="scripturl"></a>scripturl</h5><p>禁止使用scripts的url发出的警告，如 <a href="javascript:void 0" target="_blank" rel="noopener"></a></p>
 <h5 id="sub"><a href="#sub" class="headerlink" title="sub"></a>sub</h5><p>禁止提示需要用<code>.</code>访问属性而不是<code>[]</code>，例如<code>person[&#39;name&#39;]</code>和<code>person.name</code>。</p>
 <h5 id="supernew"><a href="#supernew" class="headerlink" title="supernew"></a>supernew</h5><p>对<code>new function () { ... };</code>和<code>new Object;</code>这样结构的代码不再警告。</p>
 <h5 id="validthis"><a href="#validthis" class="headerlink" title="validthis"></a>validthis</h5><p>在严格模式下，对非构造方法内使用<code>this</code>不再警告。</p>
@@ -424,7 +425,7 @@
 <h4 id="Environments"><a href="#Environments" class="headerlink" title="Environments"></a>Environments</h4><p>这些属性让JSHint知道一些预先定义好的全局变量。</p>
 <p>这些选项都比较容易理解，我就不一一解释了。这些选项包括：<code>browser</code>，<code>browserify</code>，<code>couch</code>，<code>devel</code>，<code>dojo</code>，<code>jasmine</code>，<code>jquery</code>，<code>mocha</code>，<code>module</code>，<code>mootools</code>，<code>node</code>，<code>nonstandard</code>，<code>phantom</code>，<code>prototypejs</code>，<code>qunit</code>，<code>rhino</code>，<code>shelljs</code>，<code>typed</code>，<code>worker</code>，<code>wsh</code>，<code>yui</code>。</p>
 <h3 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h3><p>我平时使用的编辑器是atom，atom安装JSHint的方法很简单，直接去install列表，搜索<code>jshint</code>，然后install就可以了。写这篇文章的目的是了解一下都有哪些配置，遇到报错，能发现问题在哪，如果您看到这篇文章，并有幸帮助到您，那就更好不过了。</p>
-<p>文章内容主要翻译自JSHint官网。链接为：<a href="http://jshint.com/docs/options/" target="_blank" rel="external">JSHint Options</a></p>
+<p>文章内容主要翻译自JSHint官网。链接为：<a href="http://jshint.com/docs/options/" target="_blank" rel="noopener">JSHint Options</a></p>
 
       
     </div>
